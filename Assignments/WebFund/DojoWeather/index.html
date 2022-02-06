@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="outerwrapper">
+        <div id="header">
+            <h2>DojoWeather</h2>
+            <div class="cities">
+                <a href="#" class="cityLinks" onclick="alert('Loading weather report...')">Yosemite</a> 
+                <a href="#" class="cityLinks" onclick="alert('Loading weather report...')">Long Beach</a>
+                <a href="#" class="cityLinks" onclick="alert('Loading weather report...')">Apple Valley</a>
+            </div>
+        </div>
+        <div class="body">
+            <div class="top">
+                <h2>Yosemite</h2>
+                <div class="topleft">
+                    <p>show temperature in</p>
+                        <select name="temp" id="tempType">
+                            <option value="°C" id="celcius">°C</option>
+                            <option value="°F" id="fahrenheit">°F</option>
+                        </select>
+                </div>
+            </div>
+            <div id="week">
+                <div class="tempBox">
+                    <h3 class="day">Today</h3>
+                    <img class="symbols" src="assets/some_rain.png" alt="rain">
+                    <p class="description">some rain</p>
+                    <div class="numbers">
+                        <p class="hi">24°</p>
+                        <p class="low">18°</p>
+                    </div>
+                </div>
+                <div class="tempBox">
+                    <h3 class="day">Tomorrow</h3>
+                    <img class="symbols" src="assets/some_sun.png" alt="sun">
+                    <p class="description">some sun </p>
+                    <div class="numbers">
+                        <p class="hi">27°</p>
+                        <p class="low">19°</p>
+                    </div>
+                </div>
+                <div class="tempBox">
+                    <h3 class="day">Friday</h3>                 <img class="symbols" src="assets/some_clouds.png" alt="cloud">
+                    <p class="description">some clouds </p>
+                    <div class="numbers">
+                        <p class="hi">21°</p>
+                        <p class="low">16°</p>
+                    </div>
+                </div>
+                <div class="tempBox">
+                    <h3 class="day">Saturday</h3>
+                    <img class="symbols" src="assets/some_sun.png" alt="sun">
+                    <p class="description">some sun </p>
+                    <div class="numbers">
+                        <p class="hi">26°</p>
+                        <p class="low">21°</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div id="cookieBanner">
+                <img src="assets/cookie.png" alt="coookie">
+                <div class="message">
+                    <h4>Stop! Cookie Time</h4>
+                    <p>We use cokkies (sadly no the edible ones) to personalize <br>
+                    content and ads, to provide social media features and to <br>
+                analyse our traffic. <a href="#">Read More...</a></p>
+                </div>
+                <button class="accept" onclick="hide('#cookieBanner')">I Accept</button>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
