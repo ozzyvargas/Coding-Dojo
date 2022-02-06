@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+            <div class="header-wrapper">
+                <div id="links">
+                    <h3 class="bold">Profile</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="bold">My Profile</a></li>
+                        <li><a href="#">Find Connections</a></li>
+                    </ul>
+                </div>
+                <div id="signout-button">
+                    <button>Sign Out</button>
+                </div>
+            </div>
+        <div id="body-container">
+            <div id="column1">
+                <div class="usercard-wrapper">
+                    <div id="userheader">
+                        <img src="icons/user-circle.png" alt="Ozzy" id="ozzy">
+                    </div>
+                    <div id="userbody">
+                        <h2 id="name"> Ozzy Vargas</h2>
+                        <p>
+                            <img src="icons/map-marker.png" alt="Map Marker">
+                            Long Beach
+                        </p>
+                        <p> 
+                            Developer | Explorer | Problem Solver<br>
+                            Changing Careers!
+                        </p>
+                        <p>
+                            <img src="icons/gear.png" alt="Gear">
+                            <a href="#" class="bodylinks" onclick="changeName('#name')">edit profile</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="education-wrapper">
+                    <div id="eduheader">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="educationbody">
+                        <p id="p1">Coding Dojo - Full Stack Bootcamp</p>
+                        <p id="p2">Jan 2022 - July 2022</p>
+                        <p id="p3"> HTML, CSS, JavaScript, Python, MERN</p>
+                    </div>
+                </div>
+            </div>
+            <div id="column2">
+                <div class="request-wrapper">
+                    <div class="smallheader">
+                        <div class="numbers">
+                            <h3 id="conrequest">2</h3>
+                        </div>
+                        <h3>Connections Request</h3>
+                    </div>
+                    <div class="requestbody">
+                        <div class="names" id="todd">
+                            <p>
+                                <img src="icons/user-circle.png" alt="Todd E" class="pics">
+                                Todd E
+                            </p>
+                            <p>
+                                <img src="icons/accept-circle.png" alt="Accept" class="pics"  onclick="hide('#todd')">  
+                                <img src="icons/close-circle.png" alt="Close" class="pics"  onclick="hide('#todd')">
+                            </p>
+                        </div>
+                        <div class="names" id="phil">
+                            <p>
+                                <img src="icons/user-circle.png" alt="Phil K" class="pics">
+                                Phil K
+                            </p>
+                            <p>
+                                <img src="icons/accept-circle.png" alt="Accept" class="pics"  onclick="hide('#phil')">   
+                                <img src="icons/close-circle.png" alt="Close" class="pics"  onclick="hide('#phil')">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="together">
+                    <div class="connection-wrapper">
+                        <div class="smallheader">
+                            <div class="numbers">
+                                <h3 id="conn">500</h3>
+                            </div>
+                            <h3>Your Connections </h3>
+                        </div>
+                        <div class="requestbody">
+                            <p>
+                                <img src="icons/user-circle.png" alt="Adrien D" class="pics">
+                                Adrien D
+                            </p>
+                            <p>
+                                <img src="icons/user-circle.png" alt="Anne J" class="pics">
+                                Anne J
+                            </p>
+                            <p>
+                                <img src="icons/user-circle.png" alt="Alayne T" class="pics">
+                                Alayne T 
+                            </p>
+                            <p>
+                                <img src="icons/user-circle.png" alt="Arry Y" class="pics">
+                                Arry Y 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="connectionslink">
+                        <a href="#" class="bodylinks">View More</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

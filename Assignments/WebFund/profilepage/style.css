@@ -1,0 +1,228 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #FFF8F3;
+    font-family: Roboto, sans-serif;
+}
+
+#main-container {
+    height:900px;
+} 
+
+#body-container {
+    max-height: fit-content;
+    max-width: max-content;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+} 
+
+#column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+#column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* top nav bar */
+.header-wrapper {
+    background-color: #191919;
+    border: 2px solid #92A9BD;
+    display: flex; 
+}
+
+#links {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#links ul, 
+#links a,
+#links li, 
+#links h3 {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    font-weight: light;
+}
+
+#signout-button {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+button {
+    background-color: #4FBDBA;
+    border-color: #4FBDBA;
+    border-radius: 5px;
+    width: 85px;
+    padding: 2.5px;
+    margin: 5px;
+}
+
+.bold {
+    color: white;
+    font-weight: bold;
+}
+
+/* user card */
+.usercard-wrapper {
+    border: 2px solid #92A9BD;
+    height: 300px;
+}
+
+#userheader {
+    height: 75px;
+    background-color: #4FBDBA;
+    margin-bottom: 10px;
+}
+
+#ozzy {
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 5px;
+}
+
+#userbody {
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+#userbody img {
+    height: 20px;
+}
+
+#userbody h2,
+#userbody img,
+#userbody p {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    margin-left: 5px;
+}
+
+.bodylinks {
+    color: #4FBDBA;
+}
+
+/* request */
+.request-wrapper {
+    border: 2px solid #92A9BD;
+    height: 200px;
+}
+
+.smallheader {
+    height: 25px;
+    background-color: #2B2B2B;
+    color: white;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    max-width: content;
+    padding: 5px;
+}
+
+.requestbody {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 65%;
+}
+
+.smallheader .numbers {
+    color: #2B2B2B;
+    background-color: #EDEDED; 
+    border-radius: 50%;
+    height: 10px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.requestbody .names {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.names p {
+    margin: 10px;
+}
+
+
+.pics {
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* connections */
+.connection-wrapper {
+    border: 2px solid #92A9BD;
+    max-width: content;
+    height: 235px;
+    margin-bottom:0px;
+}
+
+.connectionslink {
+    border: 2px solid #92A9BD;  
+    padding: 5px;
+    gap: 0px;
+    border-top: 0px;
+}
+
+/* education */
+.education-wrapper {
+    border: 2px solid #92A9BD;
+    max-width: content;
+    height: 150px;
+}
+
+#eduheader {
+    display: flex;
+    justify-content: flex-start;
+    height: 25px;
+    background-color: #2B2B2B;
+    color: white;
+    margin-bottom: 5px;
+    max-width: content;
+    padding: 5px;
+}
+
+#eduheader h3,
+.educationbody p {
+    margin-left: 10px;
+}
+
+.educationbody {
+    padding: 10px;
+}
+
+.educationbody p {
+    margin: 5px;
+}
+
+.educationbody #p2 {
+    color: #92A9BD;
+}
